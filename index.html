@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Data Mahasiswa</title>
+
+    <!-- My css -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- =========== Navbar Start =========== -->
+    <header>
+        <nav id="navbar">
+            <ul>
+            	<li><i class="fa-solid fa-house"></i></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#tabel-mahasiswa">About</a></li>
+                <li><a href="tambahdata.html">Mahasiswa</a></li>
+            </ul>
+            <div>Kontak</div>
+        </nav>
+    </header>
+    <!-- =========== Navbar End =========== -->
+
+    <!-- =========== Content Start =========== -->
+    <main id="content">
+    	<div class="container container-cards">
+    		<div class="card bg-color-1">
+    			<i class="fa-solid fa-user"></i>
+    			<h1>127</h1>
+    			<p>Dosen</p>
+    		</div>
+    		<div class="card bg-color-2">
+    			<i class="fa-solid fa-user-graduate"></i>
+    			<h1>500</h1>
+    			<p>Mahasiswa</p>
+    		</div>
+    		<div class="card bg-color-3">
+    			<i class="fa-solid fa-user-group"></i>
+    			<h1>210</h1>
+    			<p>Staff</p>
+    		</div>
+    		<div class="card bg-color-4">
+    			<i class="fa-solid fa-handshake"></i>
+    			<h1>95</h1>
+    			<p>Partnership</p>
+    		</div>
+    	</div>
+
+    	<div class="tabel-mahasiswa" id="tabel-mahasiswa">
+	    	<div class="tabel-title">
+	    		<h1><strong>Tabel Mahasiswa</strong></h1>
+	    	
+		    	<button class="button">
+		    		<a href="tambahdata.html" class="bg-color-1">Tambah Data<i class="fa-solid fa-plus"></i></a>
+		    	</button>
+	    	</div>
+	    	<table id="mahasiswa">
+	    		<tr>
+	    			<th>No</th>
+	    			<th>Foto</th>
+	    			<th>NIM</th>
+	    			<th>Nama</th>
+	    			<th>Nilai</th>
+	    			<th>Grade</th>
+	    			<th>Aksi</th>
+	    		</tr>
+	    		<tr>
+	    			<td>1</td>
+	    			<td><img src="img/foto1.png" alt="foto" class="foto"></td>
+	    			<td>121121013</td>
+	    			<td>Alif Januantara</td>
+	    			<td>97</td>
+	    			<td>A</td>
+	    			<td class="btn-col">
+	    				<button class="button">
+				    		<a href="tambahdata.html" class="bg-color-1 w-btn-fix">Ubah Data</a>
+				    	</button>
+				    	<button class="button">
+				    		<a href="tambahdata.html" class="bg-color-2 w-btn-fix">Hapus Data</a>
+				    	</button>
+	    			</td>
+	    		</tr>
+	    		<tr>
+	    			<td>2</td>
+	    			<td><img src="img/foto2.png" alt="foto" class="foto"></td>
+	    			<td>12112131</td>
+	    			<td>Ahmad Saugi</td>
+	    			<td>95</td>
+	    			<td>A</td>
+	    			<td class="btn-col">
+	    				<button class="button">
+				    		<a href="tambahdata.html" class="bg-color-1 w-btn-fix">Ubah Data</a>
+				    	</button>
+				    	<button class="button">
+				    		<a href="tambahdata.html" class="bg-color-2 w-btn-fix">Hapus Data</a>
+				    	</button>
+	    			</td>
+	    		</tr>
+	    		<tr>
+	    			<td>3</td>
+	    			<td><img src="img/foto3.png" alt="foto" class="foto"></td>
+	    			<td>121121578</td>
+	    			<td>Danang Avan</td>
+	    			<td>82</td>
+	    			<td>B</td>
+	    			<td class="btn-col">
+	    				<button class="button">
+				    		<a href="tambahdata.html" class="bg-color-1 w-btn-fix">Ubah Data</a>
+				    	</button>
+				    	<button class="button">
+				    		<a href="tambahdata.html" class="bg-color-2 w-btn-fix">Hapus Data</a>
+				    	</button>
+	    			</td>
+	    		</tr>
+	    		<tr>
+	    			<td>4</td>
+	    			<td><img src="img/foto4.png" alt="foto" class="foto"></td>
+	    			<td>121121901</td>
+	    			<td>Nova Septianti</td>
+	    			<td>78</td>
+	    			<td>D</td>
+	    			<td class="btn-col">
+	    				<button class="button">
+				    		<a href="tambahdata.html" class="bg-color-1 w-btn-fix">Ubah Data</a>
+				    	</button>
+				    	<button class="button">
+				    		<a href="tambahdata.html" class="bg-color-2 w-btn-fix">Hapus Data</a>
+				    	</button>
+	    			</td>
+	    		</tr> 	
+	    	</table>
+    	</div>
+
+    <!-- =========== Pagination Start =========== -->
+    	<div class="pagination-container">
+    		<ul>
+    			<li><<</li>
+    			<li>1</li>
+    			<li class="active">2</li>
+    			<li>3</li>
+    			<li>4</li>
+    			<li>5</li>
+    			<li>6</li>
+    			<li>>></li>
+    		</ul>
+    	</div>
+    <!-- ===========  Pagination End  =========== -->
+    </main>
+    <!-- =========== Content End =========== -->
+
+</body>
+
+</html>

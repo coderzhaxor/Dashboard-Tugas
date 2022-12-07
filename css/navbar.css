@@ -1,0 +1,58 @@
+/* +------------------------------------+ */
+/* +	Nama : Alif Januantara Prima    + */
+/* +	NPM	: 98824015121121013         + */
+/* +	Prodi : Sistem Informasi        + */
+/* +------------------------------------+ */
+/*
+	Ini adalah reusable css yang digunakan
+	untuk mengatur styling navbar di berbagai
+	file html
+*/
+/* ===================  Navbar start  =================== */
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%; padding: var(--padding);
+	background-color: #fff;
+	box-shadow: var(--shadow-sm);
+}
+
+#navbar ul {
+	display: flex;
+	gap: 10px;
+	list-style: none;
+	align-items: center;
+}
+
+#navbar i {
+	font-size: 24px;
+	color: var(--color-1);
+	margin-right: 15px;
+}
+
+#navbar a {
+	display: block;
+	padding: 12px 16px;
+	border-radius: 4px;
+	transition: background 300ms ease;
+}
+
+#navbar > div {
+	cursor: pointer;
+	border: 1px solid var(--color-1);
+	padding: var(--padding-btn);
+	color: var(--color-1);
+	border-radius: 4px;
+}
+
+#navbar > div:hover {
+	background-color: var(--color-1);
+	color: #fff;
+}
+
+#navbar a:hover {
+	color: #fff;
+	background-color: var(--color-1);
+}
+/* ===================  Navbar End  =================== */

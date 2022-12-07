@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tambah Data Mahasiswa</title>
+
+	<!-- My css -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/tambahdata.css">
+
+	<!-- icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	
+	    <!-- =========== Navbar Start =========== -->
+	    <header>
+	        <nav id="navbar">
+	            <ul>
+	            	<li><i class="fa-solid fa-house"></i></li>
+	                <li><a href="index.html">Home</a></li>
+	                <li><a href="index.html#tabel-mahasiswa">About</a></li>
+	                <li><a href="tambahdata.html" class="active">Mahasiswa</a></li>
+	            </ul>
+	            <div>Kontak</div>
+	        </nav>
+	    </header>
+    	<!-- =========== Navbar End =========== -->
+
+    	<!-- =========== Navbar Start =========== -->
+    	<main id="content">
+    		<div>
+    			<h1>Tambah Data</h1>
+    		</div>
+
+    		<!-- Form Tambah data -->
+    		<div class="form-container">
+    			<form action="">
+    				<label for="nama">Nama Lengkap</label>
+    				<input type="text" name="nama" id="nama" placeholder="Nama Mahasiswa">
+
+    				<label for="nim">NIM</label>
+    				<input type="text" name="nim" id="nim" placeholder="NIM Mahasiswa">
+
+    				<label for="jk" class="mb-10">Jenis Kelamin</label>
+    				<p>
+    					<input type="radio" name="jk" id="jk" checked>
+    					Laki-laki
+    				</p>
+    				<p class="mb-20">
+    					<input type="radio" name="jk" id="jk">
+    					Perempuan
+    				</p>
+
+    				<label for="nilai">Nilai</label>
+    				<input type="number" name="nilai" id="nilai" max="100" placeholder="Nilai Mahasiswa">
+
+    				<label for="grade">Grade</label>
+    				<select name="grade" id="grade">
+    					<option value="A">A</option>
+    					<option value="B">B</option>
+    					<option value="C">C</option>
+    					<option value="D">D</option>
+    					<option value="E">E</option>
+    				</select>
+
+    				<label for="prestasi" class="mb-10">Prestasi</label>
+    				<p>
+    					<input type="checkbox" name="prestasi" id="prestasi">
+    					Event Nasional
+    				</p>
+    				<p class="mb-20">
+    					<input type="checkbox" name="prestasi">
+    					Event Internasional
+    				</p>
+
+    				<label for="date">Tanggal</label>
+    				<input type="date" name="date" id="date">
+
+    				<label for="foto">Foto</label>
+    				<input type="file" name="foto" id="foto">
+
+    				<label for="alamat" class="mb-10">Alamat</label>
+    				<textarea name="alamat" id="alamat">
+    					Masukan Alamat
+    				</textarea>
+
+    				<input type="submit" value="Submit">
+    			</form>
+    		</div>
+    	</main>
+    	<!-- =========== Navbar End =========== -->
+</body>
+</html>

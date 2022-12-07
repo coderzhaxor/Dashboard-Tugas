@@ -1,0 +1,139 @@
+/* +------------------------------------+ */
+/* +	Nama : Alif Januantara Prima    + */
+/* +	NPM	: 98824015121121013         + */
+/* +	Prodi : Sistem Informasi        + */
+/* +------------------------------------+ */
+
+/*
+	Css ini berfungsi untuk mereset styling,
+	menambahkan css variables untuk color pallete agar
+	jika sewaktu waktu ingin merubah temanya lagi maka
+	cukup hanya dengan mengganti hex color di variablesnya saja.
+	Selain itu ada juga utilities class yang nantinya akan digunakan di html
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* ===================== CSS Variables Start ===================== */
+:root {	
+--color-1: #7380ec;
+--color-1-lighten: #e9ebfc;
+--color-2: #ff7782;
+--color-3: #41f1b6;
+--color-4: #ffbb55;
+--color-bg: #f6f6f9;
+
+--shadow-sm: 0 .1rem .6rem rgba(132, 139, 200, 0.18);
+--shadow-lg: 0 1rem 2rem rgba(132, 139, 200, 0.18);
+--padding: 12px 5%;
+--padding-btn: 12px 16px;
+}
+/* =====================  CSS Variables End  ===================== */
+
+/* ===================    Base Styling Start   =================== */
+*, html, body {
+	margin: 0; padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	font-size: 14px;
+	width: 100%; min-height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	background-color: var(--background-color);
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+i {
+	font-size: 48px;
+}
+
+button {
+	border: none;
+	text-align: center;
+}
+
+button a {
+	padding: var(--padding-btn);
+	display: block;
+	border-radius: 4px;
+	color: #fff;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+}
+
+:is(th, td) {
+	border: 1px solid #ccc;
+	padding: 8px 10px;
+}
+
+tr:hover {
+	background-color: var(--color-1-lighten) !important;
+}
+
+th {
+	font-weight: 500;
+}
+/*  ===================  Base Styling End  =================== */
+
+/*  ===================   Utilities Start  =================== */
+.bg-color-1 {
+	background-color: var(--color-1);
+}
+
+.bg-color-2 {
+	background-color: var(--color-2);
+}
+
+.bg-color-3 {
+	background-color: var(--color-3);
+}
+
+.bg-color-4 {
+	background-color: var(--color-4);
+}
+
+.w-btn-fix {
+	width: max-content;
+	transition: all 300ms ease-in-out;
+}
+
+.w-btn-fix:hover {
+	opacity: 85%;
+}
+
+
+.btn-col {
+	justify-content: center;
+	padding: 8px 12px;
+}
+
+.btn-col button {
+	margin-block: 8px;
+}
+
+.container {
+	width: 100%;
+}
+
+.container-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+
+.active {
+	background-color: var(--color-1) !important;
+	color: #fff;
+}
